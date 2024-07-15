@@ -1,4 +1,4 @@
-package com.cod.market.qustion.entity;
+package com.cod.market.question.entity;
 
 import com.cod.market.base.BaseEntity;
 import com.cod.market.member.entity.Member;
