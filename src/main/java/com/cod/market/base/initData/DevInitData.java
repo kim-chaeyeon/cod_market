@@ -15,6 +15,7 @@ public class DevInitData implements BeforeInitData {
         return args -> {
             beforeInit();
 
+            // member init
             String password = "1234";
             memberService.join("admin", password, "admin@test.com", "admin");
             memberService.join("user1", password, "user1@test.com", "user1");
@@ -22,6 +23,7 @@ public class DevInitData implements BeforeInitData {
             memberService.join("user3", password, "user3@test.com", "user3");
             memberService.join("user4", password, "user4@test.com", "user4");
 
+            // product init
             productService.create("타이틀1", "1 설명입니다.", 10000);
             productService.create("타이틀2", "2 설명입니다.", 20000);
             productService.create("타이틀3", "3 설명입니다.", 30000);
